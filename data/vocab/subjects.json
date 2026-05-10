@@ -1,0 +1,30 @@
+{
+  "_note": "Subjects for grammar drills. Person + number drives verb conjugation choice (he/she/it/singular noun → thirdPerson form).",
+  "pronouns": [
+    { "word": "I",    "person": 1, "number": "singular", "thirdPerson": false, "zh": "我" },
+    { "word": "you",  "person": 2, "number": "singular", "thirdPerson": false, "zh": "你" },
+    { "word": "he",   "person": 3, "number": "singular", "thirdPerson": true,  "zh": "他" },
+    { "word": "she",  "person": 3, "number": "singular", "thirdPerson": true,  "zh": "她" },
+    { "word": "it",   "person": 3, "number": "singular", "thirdPerson": true,  "zh": "它/牠" },
+    { "word": "we",   "person": 1, "number": "plural",   "thirdPerson": false, "zh": "我們" },
+    { "word": "you",  "person": 2, "number": "plural",   "thirdPerson": false, "zh": "你們", "key": "you-plural" },
+    { "word": "they", "person": 3, "number": "plural",   "thirdPerson": false, "zh": "他們" }
+  ],
+  "names": [
+    { "word": "Chloe",  "gender": "female", "person": 3, "number": "singular", "thirdPerson": true, "zh": "Chloe" },
+    { "word": "Tom",    "gender": "male",   "person": 3, "number": "singular", "thirdPerson": true, "zh": "Tom" },
+    { "word": "Mary",   "gender": "female", "person": 3, "number": "singular", "thirdPerson": true, "zh": "Mary" },
+    { "word": "Ben",    "gender": "male",   "person": 3, "number": "singular", "thirdPerson": true, "zh": "Ben" },
+    { "word": "Lucy",   "gender": "female", "person": 3, "number": "singular", "thirdPerson": true, "zh": "Lucy" },
+    { "word": "Jack",   "gender": "male",   "person": 3, "number": "singular", "thirdPerson": true, "zh": "Jack" },
+    { "word": "David",  "gender": "male",   "person": 3, "number": "singular", "thirdPerson": true, "zh": "David" },
+    { "word": "Anna",   "gender": "female", "person": 3, "number": "singular", "thirdPerson": true, "zh": "Anna" }
+  ],
+  "groupNames": [
+    { "word": "Tom and Mary", "person": 3, "number": "plural", "thirdPerson": false, "zh": "Tom 和 Mary" },
+    { "word": "the children", "person": 3, "number": "plural", "thirdPerson": false, "zh": "孩子們" },
+    { "word": "my parents",   "person": 3, "number": "plural", "thirdPerson": false, "zh": "我的父母" },
+    { "word": "the boys",     "person": 3, "number": "plural", "thirdPerson": false, "zh": "男孩們" },
+    { "word": "the girls",    "person": 3, "number": "plural", "thirdPerson": false, "zh": "女孩們" }
+  ]
+}
