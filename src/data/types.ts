@@ -6,6 +6,7 @@ export interface Verb {
   pp: string;
   regular: boolean;
   zh: string;
+  object?: { en: string; zh: string };
 }
 
 export interface Subject {

@@ -2,6 +2,7 @@ import level4 from '../../data/vocab/movers-level4.json';
 import level6 from '../../data/vocab/movers-level6.json';
 import irregular from '../../data/vocab/irregular-verbs.json';
 import subjectsRaw from '../../data/vocab/subjects.json';
+import { verbMetadata } from './verbMetadata';
 import type { Subject, Verb } from './types';
 
 interface RawVerb {
@@ -46,8 +47,11 @@ function buildVerbList(): Verb[] {
   ];
   for (const raw of sources) {
     if (SKIP_BASES.has(raw.base)) continue;
+    const meta = verbMetadata[raw.base];
+    if (meta?.skip) continue;
     const v = normalizeVerb(raw);
     if (!v) continue;
+    if (meta?.object) v.object = meta.object;
     if (!merged.has(v.base)) merged.set(v.base, v);
   }
   return [...merged.values()];
